@@ -1,0 +1,32 @@
+.peculiarities-list {
+    // display: flex;
+    flex-wrap: wrap;
+  }
+  .pecul-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .pecul-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .peculiarities-second-text {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    text-align: left;
+  }
+  .pecul-icon {
+    align-items: center;
+  }
+  .icon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }

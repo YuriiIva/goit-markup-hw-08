@@ -1,0 +1,135 @@
+.container-header {
+    display: flex;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-list{
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    & a:hover,
+    & a:focus {
+      color: var(--accent-color);
+    }
+  }
+  .information-list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+  .logo {
+    color: var(--accent-color);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .header {
+    border: 1px solid #ececec;
+  }
+  
+  .header-nav_color_dark {
+    color: var(--logo-dark-color);
+  }
+  
+  .accent-white {
+    color: var(--title-white-color);
+  }
+  .information-list__contact {
+    margin-left: 50px;
+  }
+  
+  .header__logo {
+    margin-right: 93px;
+  }
+  .header-list__item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:not(:last-child) {
+    margin-right: 50px;
+  }
+  }
+
+  .link {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+  }
+ 
+  
+  .current {
+    color: var(--accent-color);
+    &::after {
+      content: "";
+      height: 4px;
+      display: block;
+      background-color: var(--accent-color);
+      margin-top: 28px;
+      margin-bottom: 0;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: -28px;
+    }
+  }
+  
+  .contact {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
+  }
+  .information-list__mail {
+    display: flex;
+    align-items: center;
+  }
+  
+  .information-list__icon {
+    width: 16px;
+    height: 12px;
+    fill: var(--primary-text-color);
+    margin-right: 6px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     .contact:hover &,
+     .contact:focus & {
+    fill: var(--accent-color);
+  }
+  
+  }
+  
+  
+  
+  .information-list__tel-icon {
+    align-items: center;
+    height: 16px;
+    width: 10px;
+    margin-right: 6px;
+    fill: var(--primary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contact:hover &, 
+    .contact:focus & {
+      fill: var(--accent-color);
+    }
+  }
+  

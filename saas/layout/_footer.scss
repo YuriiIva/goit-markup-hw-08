@@ -1,0 +1,88 @@
+.futer {
+    background-color: var(--bgr-color);
+    padding: 60px 0;
+  }
+  .futer-logo {
+    margin-bottom: 20px;
+  }
+  .futer .address {
+    color: var(--title-white-color);
+  
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    margin-bottom: 9px;
+    margin-top: 20px;
+  }
+  .futer .inf {
+    font-family: Roboto;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+  }
+  
+  .futer-inf-mail {
+    display: block;
+    margin-bottom: 9px;
+  }
+  .futer-inf-tel {
+    display: block;
+  }
+  .futer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .futer-left {
+    margin-right: 70px;
+  }
+
+  .futer-right-title {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: left;
+    color: var(--title-white-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .futer-right-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .futer-right-list-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+  }
+  }
+  
+  
+  
+  .futer-icon {
+    fill: var(--title-white-color);
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .futer-right-item {
+    width: 44px;
+    height: 44px;
+    &:not(:last-child) {
+    margin-right: 10px;
+  }
+  }
+  
+  .futer-right {
+    margin-right: 93px;
+  }
