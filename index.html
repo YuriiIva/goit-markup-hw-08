@@ -24,7 +24,7 @@
   <body>
     <!--Шапка сайта-->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container-header"> 
         <nav class="header-nav">
           <a href="/" class="logo header__logo header-logo">
@@ -41,7 +41,7 @@
           </ul>
         </nav>
         <ul class="information-list">
-          <li>
+          <li class="information-item">
             <a href="mailto:info@devstudio.com" class="contact information-list__mail">
               <svg class="information-list__icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -49,7 +49,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li information-item>
             <a href="tel:+380961111111" class="contact information-list__contact">
               <svg class="information-list__tel-icon">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -59,7 +59,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- hero -->
     <main>
       <section class="hero-section section">
@@ -72,7 +72,7 @@
       </section>
 
       <!--Особенности-->
-<!-- 
+
       <section class="section-pecul section">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
@@ -127,11 +127,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Работа-->
 
-      <!-- <section class="section-work section">
+      <section class="section-work section ">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
@@ -162,11 +162,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наша команда-->
 
-      <!-- <section class="section-team section">
+      <section class="section-team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
@@ -341,11 +341,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Clients-->
 
-      <!-- <section class="section-clients section">
+      <section class="section-clients section">
         <div class="container">
           <h2 class="section-title section-title-clients">
             Постоянные клиенты
@@ -396,12 +396,13 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!--Футер-->
 
-    <!-- <footer class="futer">
+    <footer class="futer">
       <div class="container futer-container">
+        <div class="futer-information">
         <div class="futer-left">
           <a href="/" class="logo futer-logo">
             Web<span class="accent-white">Studio</span>
@@ -409,7 +410,7 @@
           <address class="futer-adrdess">
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
-              <li>
+              <li >
                 <a href="" class="futer-inf-mail inf">info@example.com</a>
               </li>
               <li>
@@ -451,8 +452,10 @@
             </li>
           </ul>
         </div>
+      </div>
 
      <form action="#" class="form-futer-main">
+       
         <label 
         for="user-email-futer" class="futer-label"> <a href=""></a>Подпишитесь на рассылку</label>
         <span class="futer-form-connect">
@@ -464,9 +467,10 @@
           </svg>
         </span>
        </span>
+      
      </form>
       </div>
-    </footer> -->
+    </footer>
 
 
 
@@ -547,5 +551,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+
   </body>
 </html>

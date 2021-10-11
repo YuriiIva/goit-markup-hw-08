@@ -1,26 +1,80 @@
 .futer {
     background-color: var(--bgr-color);
     padding: 60px 0;
+   
   }
+
+  .futer-container {
+    // display: flex;
+    // align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+   
+  }
+    
+  
+  .futer-information {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    align-items: baseline;
+    }
+  }
+
   .futer-logo {
     margin-bottom: 20px;
+    width: 154px;
+    height: 28px;
+    font-size: 24px;
+line-height: 1.67;
+    
+    @media screen  and (min-width: 1200px) { 
+      width: 145px;
+    height: 31px;
+    font-size: 26px;
+    line-height: 1.19;
+    }
+   
   }
   .futer .address {
+
     color: var(--title-white-color);
   
     font-size: 14px;
     line-height: 1.71;
-    text-align: left;
+    // text-align: left;
     margin-bottom: 9px;
     margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
+  .futer-adrdess {
+    margin-bottom: 60px;
+    @media screen and (min-width: 320px) {
+      text-align: center;
+    }
+    @media screen and(min-width: 768px) {
+      width: 232px;
+      height: 79px;
+      
+    }
+  }
+
   .futer .inf {
     font-family: Roboto;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
-    text-align: left;
+    // text-align: left;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   
   .futer-inf-mail {
@@ -30,12 +84,29 @@
   .futer-inf-tel {
     display: block;
   }
-  .futer-container {
-    display: flex;
-    align-items: baseline;
-  }
+  
   .futer-left {
-    margin-right: 70px;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px){
+      text-align: center;
+    }
+    
+  }
+  .futer-right {
+   
+    @media screen and (min-width: 320px) {
+     margin-bottom: 60px;
+      
+    }
+    @media screen and (min-width: 768px) {
+      width: 206px;
+      height: 80px;
+      margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+      margin-left: 70px;
+    }
   }
 
   .futer-right-title {
@@ -45,6 +116,10 @@
     color: var(--title-white-color);
     margin-bottom: 20px;
     text-transform: uppercase;
+    @media screen and (min-width: 320px) and (max-width: 1199px){
+      text-align: center;
+      
+    }
   }
   
   .futer-right-list {
@@ -82,7 +157,4 @@
     margin-right: 10px;
   }
   }
-  
-  .futer-right {
-    margin-right: 93px;
-  }
+ 

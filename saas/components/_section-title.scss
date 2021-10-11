@@ -1,5 +1,11 @@
 .section-work {
     padding-top: 0;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
   .section-title {
     margin-top: 0;
@@ -9,6 +15,11 @@
     font-weight: 700;
     line-height: 1.17;
     text-align: center;
+    @media screen and (max-width: 1199px) {
+      font-size: 28px;
+      line-height: 1.18px;
+      margin-bottom: 30px;
+    }
   }
 
 .title-text {

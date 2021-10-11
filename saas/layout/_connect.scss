@@ -1,6 +1,8 @@
 .futer-form-connect {
-    display: flex;
     justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
    
     position: relative;
   }
@@ -11,32 +13,67 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-white-color);
+    margin: 0 auto;
     margin-bottom: 20px;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  text-align: center;
+    }  
   }
   .futer-form-email {
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
+    // width: 358px;
+    // height: 50px;
+    // margin-right: 12px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen  and (min-width: 320px)  { 
+    min-width: 290px;;
+    height: 50px;
+    margin-bottom: 20px;
+    }
+    @media screen  and (min-width: 480px)  { 
+      width: 450px;
+      }
+    @media screen  and (min-width: 768px) {
+      display: block;
+     margin: 0 auto;
+     margin-bottom: 20px;
+    }
+    @media screen  and (min-width: 1200px) {
+      width: 358px;
+      height: 50px;
+      margin-right: 12px;
+    }
   }
   .futer-form-connect > .btn-futer {
     width: 200px;
+    height: 50px;
     background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
+  // display: flex;
   align-items: center;
   letter-spacing: 0.06em;
   color: var(--title-white-color);
   position: relative;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
-  
+  }
+  .form-futer-item {
+    position: relative;
+    
+  }
   .form-futer-icon {
     position: absolute;
-    right: 37px;
+    right: 32px;
     top: 13px;
   }
+  .form-futer-main {
+    @media screen and (min-width: 320px) and (max-width: 1199px){
+      text-align: center;
+    }
+  }
+  
