@@ -59,6 +59,69 @@
           </li>
         </ul>
       </div>
+      <button type="button"  class="header-btn-open">
+        <svg class="header-btn-open-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_40px-1"></use>
+        </svg>
+      </button> 
+
+<div class="backdrop">
+  <div class="mob-menu">
+  <button type="button"  class="mob-btn-close"> 
+    <svg class="mob-btn-close-icon" width="11" height="11" >
+      <use href="./images/icons.svg#icon-close_40px-1"></use>
+    </svg>
+  </button>
+  <p class="mob-title">Оставьте свои данные, мы вам перезвоним</p>
+  
+
+  <form action="#">
+    <div class="mob-field">
+    <label for="mob-user-name" class="mob-fied-text">Имя</label>
+    <span class="mob-input-wrapper"> 
+      <input type="text" id="mob-user-name" class="mob-input"> 
+      <svg class="mob-input-icon" width="12" height="12">
+        <use href="./images/icons.svg#icon-Vector"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="mob-field">
+    <label for="mob-user-tel" class="mob-fied-text">Телефон</label>
+    <span class="mob-input-wrapper"> 
+      <input type="text" name="mob-user-tel" id="mob-user-tel" class="mob-input"> 
+      <svg class="mob-input-icon" width="13" height="13">
+        <use href="./images/icons.svg#icon-Vector-2"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="mob-field">
+    <label for="mob-user-email" class="mob-fied-text">Почта</label>
+    <span class="mob-input-wrapper"> 
+      <input type="text" name="mob-user-email" id="mob-user-email" class="mob-input"> 
+      <svg class="mob-input-icon" width="15" height="12">
+        <use href="./images/icons.svg#icon-Vector-3"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="mob-field">
+    <label for="mob-user-comment" class="mob-fied-text">Комментарий</label>
+    <textarea
+      name="mob-user-comment"
+      id="mob-user-comment"
+      class="mob-text"
+      placeholder="Введите текст"
+    ></textarea>
+  </div>
+  Соглашаюсь с рассылкой и принимаю 
+  <a href="">Условия договора</a>
+</label>
+<button type="submit" class="btn mob-btn">
+  Отправить
+</button>
+  </form>
+</div>
+</div>
+      
     </header>
     <!-- hero -->
     <main>
@@ -520,7 +583,7 @@
               </svg>
             </span>
           </div>
-          <div class="form-fied">
+          <div class="form-fied-comment">
             <label for="user-comment" class="form-fied-text">Комментарий</label>
             <textarea
               name="user-comment"
@@ -529,18 +592,7 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <input
-            type="checkbox"
-            class="form-checkbox visually-hidden "
-            name="policy"
-            id="policy"
-          />
-          <label for="policy" class="check-text">
-            <span class="check-item">
-              <svg class="check-icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-Vector-4"></use>
-              </svg>
-            </span>
+          
             Соглашаюсь с рассылкой и принимаю
             <a href="">Условия договора</a>
           </label>
