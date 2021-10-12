@@ -59,22 +59,23 @@
           </li>
         </ul>
       </div>
-      <button type="button"  class="header-btn-open">
+      <button type="button"  class="header-btn-open" data-menu-open >
         <svg class="header-btn-open-icon" width="40" height="40">
           <use href="./images/icons.svg#icon-menu_40px-1"></use>
         </svg>
       </button> 
 
-<div class="backdrop" >
+<!-- Mob-menu -->
+
+
+<div class="backdrop is-hidden"  data-menu >
   <div class="mob-menu">
-  <button type="button"  class="mob-btn-close"> 
+  <button type="button" data-menu-close class="mob-btn-close" > 
     <svg class="mob-btn-close-icon" width="11" height="11" >
       <use href="./images/icons.svg#icon-close_40px-1"></use>
     </svg>
   </button>
   <p class="mob-title">Оставьте свои данные, мы вам перезвоним</p>
-  
-
   <form action="#">
     <div class="mob-field">
     <label for="mob-user-name" class="mob-fied-text">Имя</label>
@@ -113,7 +114,7 @@
     ></textarea>
   </div>
   Соглашаюсь с рассылкой и принимаю 
-  <a href="">Условия договора</a>
+  <a href="" class="contract">Условия договора</a>
 </label>
 <button type="submit" class="btn mob-btn">
   Отправить
@@ -121,9 +122,12 @@
   </form>
 </div>
 </div>
-      
     </header>
+
+
     <!-- hero -->
+
+
     <main>
       <section class="hero-section section">
         <div class="hero-container container">
@@ -615,6 +619,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>
