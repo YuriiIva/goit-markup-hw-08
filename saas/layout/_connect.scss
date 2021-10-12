@@ -68,8 +68,12 @@
   }
   .form-futer-icon {
     position: absolute;
-    right: 32px;
+    right: 13px;
     top: 13px;
+
+  }
+  .btn-futer {
+    position: relative;
   }
   .form-futer-main {
     @media screen and (min-width: 320px) and (max-width: 1199px){

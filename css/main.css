@@ -678,8 +678,8 @@ body {
 }
 
 .mob-check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.33;
   color: var(--primary-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1294,8 +1294,12 @@ body {
 
 .form-futer-icon {
   position: absolute;
-  right: 32px;
+  right: 13px;
   top: 13px;
+}
+
+.btn-futer {
+  position: relative;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {

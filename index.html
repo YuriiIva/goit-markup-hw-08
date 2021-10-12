@@ -119,9 +119,9 @@
   name="policy"
   id="policy"
 />
-<label for="policy" class="check-text">
-  <span class="check-item">
-    <svg class="check-icon" width="16" height="15">
+<label for="policy" class="mob-check-text">
+  <span class="mob-check-item">
+    <svg class="mob-check-icon" width="16" height="15">
       <use href="./images/icons.svg#icon-Vector-4"></use>
     </svg>
   </span>
@@ -251,17 +251,27 @@
 
           <ul class="team-list">
             <li class="team-item">
-              <img
+              <picture>
+                <source srcset="./images/people/people1.jpg 1x, ./images/people/people1-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/people/people1-tab.jpg 1x, ./images/people/people1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/people/people1-mob.jpg 1x, ./images/people/people1-mob-2x.jpg 2x" media="(min-width: 320px)">
+                <img
                 class="team-imag"
-                src="./images/people1.jpg"
+                src="./images/people/people1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
+              </picture>
+               
+              
               <div class="team-text">
                 <h3 class="title team-title">Игорь Демьяненко</h3>
                 <p class="team-second-text">Product Designer</p>
                 <ul class="team-list-item social-list">
                   <li class="social-item">
+                    
+                      
+                    </picture>
                     <a href="" class="social-link">
                       <svg class="social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -269,6 +279,7 @@
                     </a>
                   </li>
                   <li class="social-item">
+                   
                     <a href="" class="social-link">
                       <svg class="social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
@@ -283,6 +294,7 @@
                     </a>
                   </li>
                   <li class="social-item">
+
                     <a href="" class="social-link">
                       <svg class="social-icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -293,12 +305,19 @@
               </div>
             </li>
             <li class="team-item">
-              <img
+              <picture>
+                <source srcset="./images/people/people2.jpg 1x, ./images/people/people2-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/people/people2-tab.jpg 1x, ./images/people/people2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/people/people2-mob.jpg 1x, ./images/people/people2-mob-2x.jpg 2x" media="(min-width: 320px)">
+                <img
                 class="team-imag"
-                src="./images/people2.jpg"
+                src="./images/people/people2.jpg"
                 alt="Ольга Репина"
                 width="270"
               />
+              </picture>
+
+              
               <div class="team-text">
                 <h3 class="title team-title">Ольга Репина</h3>
                 <p class="team-second-text">Frontend Developer</p>
@@ -335,12 +354,21 @@
               </div>
             </li>
             <li class="team-item">
-              <img
+             
+              <picture>
+                <source srcset="./images/people/people3.jpg 1x, ./images/people/people3-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/people/people3-tab.jpg 1x, ./images/people/people3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/people/people3-tab.jpg 1x, ./images/people/people3-tab-2x.jpg 2x" media="(min-width: 320px)">
+                    <img
                 class="team-imag"
-                src="./images/people3.jpg"
+                src="./images/people/people3.jpg"
                 alt="Николай Тарасов"
                 width="270"
               />
+              </picture>
+
+                
+            
               <div class="team-text">
                 <h3 class="title team-title">Николай Тарасов</h3>
                 <p class="team-second-text">Marketing</p>
@@ -377,12 +405,19 @@
               </div>
             </li>
             <li class="team-item">
-              <img
+              <picture>
+                <source srcset="./images/people/people4.jpg 1x, ./images/people/people4-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/people/people4-tab.jpg 1x, ./images/people/people4-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/people/people4-mob.jpg 1x, ./images/people/people4-mob-2x.jpg 2x" media="(min-width: 320px)">
+                <img
                 class="team-imag"
-                src="./images/people4.jpg"
+                src="./images/people/people4.jpg"
                 alt="Михаил Ермаков"
                 width="270"
               />
+              </picture>
+
+              
               <div class="team-text">
                 <h3 class="title team-title">Михаил Ермаков</h3>
                 <p class="team-second-text">UI Designer</p>
@@ -539,11 +574,12 @@
         for="user-email-futer" class="futer-label"> <a href=""></a>Подпишитесь на рассылку</label>
         <span class="futer-form-connect">
         <input  type="text" class="futer-form-email" name="user-email-futer" id="user-email-futer" placeholder="E-mail">
-        <button type="submit" class="btn btn-futer" >Подписаться</button>
-        <span class="form-futer-item">
-          <svg class="form-futer-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-icon-send"></use>
-          </svg>
+        <button type="submit" class="btn btn-futer" >Подписаться <svg class="form-futer-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
+      </button>
+      
+          
         </span>
        </span>
       
@@ -554,69 +590,68 @@
 
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="mob-menu ">
-        <button type="button" data-modal-close class="mob-btn-close">
+      <div class="modal">
+        <button type="button" data-modal-close class="btn-close">
           <svg class="btn-close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-Vector-1"></use>
           </svg>
         </button>
-        <p class="mob-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#">
-          <div class="mob-field">
-            <label for="user-name" class="mob-fied-text">Имя</label>
-            <span class="mob-input-wrapper ">
+          <div class="form-fied">
+            <label for="user-name" class="form-fied-text">Имя</label>
+            <span class="input-wrapper">
               <input
                 type="text"
                 name="user-name"
                 id="user-name"
-                class="mob-input"
+                class="form-input"
               />
-              <svg class="mob-input-icon" width="12" height="12">
+              <svg class="input-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </span>
           </div>
-          <div class="mob-field ">
-            <label for="user-tel" class="mob-fied-text">Телефон</label>
-            <span class="mob-input-wrapper ">
+          <div class="form-fied">
+            <label for="user-tel" class="form-fied-text">Телефон</label>
+            <span class="input-wrapper">
               <input
                 type="text"
                 name="user-tel"
                 id="user-tel"
-                class="mob-input"
+                class="form-input"
               />
-              <svg class="mob-input-icon" width="13" height="13">
+              <svg class="input-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-Vector-2"></use>
               </svg>
             </span>
           </div>
-          <div class="mob-field ">
-            <label for="user-email" class="mob-fied-text">Почта</label>
-            <span class="mob-input-wrapper ">
-              <input type="text" name="user-email" id="user-email" class="mob-input"/>
-              <svg class="mob-input-icon" width="15" height="12">
+          <div class="form-fied">
+            <label for="user-email" class="form-fied-text">Почта</label>
+            <span class="input-wrapper">
+              <input type="text" name="user-email" id="user-email" class="form-input"/>
+              <svg class="input-icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-Vector-3"></use>
               </svg>
             </span>
           </div>
-          <div class="mob-fied-comment">
-            <label for="user-comment" class="mob-fied-text">Комментарий</label>
+          <div class="form-fied">
+            <label for="user-comment" class="form-fied-text">Комментарий</label>
             <textarea
               name="user-comment"
               id="user-comment"
-              class="mob-text"
+              class="form-text"
               placeholder="Введите текст"
             ></textarea>
           </div>
           <input
             type="checkbox"
-            class="mob-checkbox visually-hidden "
+            class="form-checkbox visually-hidden "
             name="policy"
             id="policy"
           />
-
-          <label for="policy" class="mob-check-text">
-            <span class="mob-check-item ">
+          <label for="policy" class="check-text">
+            <span class="check-item">
               <svg class="check-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-Vector-4"></use>
               </svg>
@@ -624,9 +659,9 @@
             Соглашаюсь с рассылкой и принимаю
             <a href="">Условия договора</a>
           </label>
-          <button type="submit" class="btn mob-btn">
+          <button type="submit" class="btn form-btn">
             Отправить
-          </button> 
+          </button>
         </form>
       </div>
     </div>
