@@ -191,7 +191,8 @@
     position: fixed ;
     width: 100vw;
     height: 609px;
-     top: 93px;
+    //  top: 93px;
+     
      @media screen and (min-width: 480px)  {
       width: 450px;
     }
@@ -232,10 +233,11 @@
      outline: transparent;
      &:focus {
       border-color: var(--accent-color);
-      + .mob-input-icon {
+      ~ .mob-input-icon {
         fill: var(--accent-color);
+        color: var(--accent-color);
       }
-      
+     
     }
   }
 
@@ -244,10 +246,10 @@
   .mob-field {
     margin-bottom: 28px;
   } 
-  .form-fied-comment {
+  .mob-fied-comment {
     margin-bottom: 20px;
   }
-  .fmob-fied-text {
+  .mob-fied-text {
     display: block;
   
     font-size: 12px;
@@ -258,7 +260,7 @@
   }
   .mob-text {
     width: 100%;
-    height: 120px;
+    height: 50px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -280,7 +282,7 @@
   left: 14px;
   top: 13px;
 }
-.check-text {
+.mob-check-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
@@ -288,7 +290,7 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.check-item {
+.mob-check-item {
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -296,11 +298,10 @@
   display: flex;
   justify-content: center;
   border: 1px solid var(--title-text-color);
-  .form-checkbox:checked + .check-text & {
+  .mob-checkbox:checked + .mob-check-text & {
   background-color: var(--accent-color);
   border-color: transparent;
 }
-
 }
 
 

@@ -65,7 +65,7 @@
         </svg>
       </button> 
 
-<div class="backdrop">
+<div class="backdrop" >
   <div class="mob-menu">
   <button type="button"  class="mob-btn-close"> 
     <svg class="mob-btn-close-icon" width="11" height="11" >
@@ -538,67 +538,79 @@
 
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" data-modal-close class="btn-close">
+      <div class="mob-menu ">
+        <button type="button"  class="mob-btn-close">
           <svg class="btn-close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-Vector-1"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="mob-title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#">
-          <div class="form-fied">
-            <label for="user-name" class="form-fied-text">Имя</label>
-            <span class="input-wrapper">
+          <div class="mob-field">
+            <label for="user-name" class="mob-fied-text">Имя</label>
+            <span class="mob-input-wrapper ">
               <input
                 type="text"
                 name="user-name"
                 id="user-name"
-                class="form-input"
+                class="mob-input"
               />
-              <svg class="input-icon" width="12" height="12">
+              <svg class="mob-input-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </span>
           </div>
-          <div class="form-fied">
-            <label for="user-tel" class="form-fied-text">Телефон</label>
-            <span class="input-wrapper">
+          <div class="mob-field ">
+            <label for="user-tel" class="mob-fied-text">Телефон</label>
+            <span class="mob-input-wrapper ">
               <input
                 type="text"
                 name="user-tel"
                 id="user-tel"
-                class="form-input"
+                class="mob-input"
               />
-              <svg class="input-icon" width="13" height="13">
+              <svg class="mob-input-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-Vector-2"></use>
               </svg>
             </span>
           </div>
-          <div class="form-fied">
-            <label for="user-email" class="form-fied-text">Почта</label>
-            <span class="input-wrapper">
-              <input type="text" name="user-email" id="user-email" class="form-input"/>
-              <svg class="input-icon" width="15" height="12">
+          <div class="mob-field ">
+            <label for="user-email" class="mob-fied-text">Почта</label>
+            <span class="mob-input-wrapper ">
+              <input type="text" name="user-email" id="user-email" class="mob-input"/>
+              <svg class="mob-input-icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-Vector-3"></use>
               </svg>
             </span>
           </div>
-          <div class="form-fied-comment">
-            <label for="user-comment" class="form-fied-text">Комментарий</label>
+          <div class="mob-fied-comment">
+            <label for="user-comment" class="mob-fied-text">Комментарий</label>
             <textarea
               name="user-comment"
               id="user-comment"
-              class="form-text"
+              class="mob-text"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          
+          <input
+            type="checkbox"
+            class="mob-checkbox visually-hidden "
+            name="mob-policy"
+            id="mob-policy"
+          />
+
+          <label for="mob-policy" class="mob-check-text">
+            <span class="mob-check-item ">
+              <svg class="check-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-Vector-4"></use>
+              </svg>
+            </span>
             Соглашаюсь с рассылкой и принимаю
             <a href="">Условия договора</a>
           </label>
-          <button type="submit" class="btn form-btn">
+          <button type="submit" class="btn mob-btn">
             Отправить
-          </button>
+          </button> 
         </form>
       </div>
     </div>
