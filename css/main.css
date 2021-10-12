@@ -547,6 +547,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .mob-btn-close {
   background: var(--title-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -594,7 +601,7 @@ body {
   border-color: var(--accent-color);
 }
 
-.mob-input:focus ~ .mob-input-icon {
+.mob-input:focus + .mob-input-icon {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
@@ -683,7 +690,7 @@ body {
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  margin-right: 9px;
+  margin-right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
