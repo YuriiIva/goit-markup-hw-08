@@ -718,6 +718,7 @@ body {
   margin: 0 auto;
   color: var(--title-white-color);
   margin-top: 31px;
+  padding: 10px 25px;
 }
 
 .hero-section {
