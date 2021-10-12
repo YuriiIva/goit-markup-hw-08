@@ -38,7 +38,9 @@
     }
     @media screen and (min-width: 1200px) {
       display: flex;
+      flex-direction: row;
       margin-left: auto;
+      align-items: center;
     }
   }
 
@@ -148,9 +150,11 @@
     align-items: center;
     @media screen and (min-width: 768px) {
       margin-bottom: 10px;
-      
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
   }
 }
+  }
   .information-list__icon {
     width: 16px;
     height: 12px;
