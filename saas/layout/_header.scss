@@ -190,18 +190,21 @@
     background-color: transparent;
     &:hover, &focus {
       fill: var(--accent-color);
-    }
+     }
     @media screen and (min-width: 768px) {
       display: none;
-      
-    }
-  }
+       }
+     }
   .mob-menu {
     position: fixed ;
     width: 100vw;
     height: 609px;
-    //  top: 93px;
-     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--title-white-color);
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    
      @media screen and (min-width: 480px)  {
       width: 450px;
     }
@@ -209,8 +212,9 @@
       width: 528px;
       height: 581px;
     }
-
   }
+
+  
   .mob-btn-close {
     background: var(--title-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -225,108 +229,64 @@
  right: 8px;
  top: 8px;
   }
-  .mob-title {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .mob-input{
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-left: 42px;
-     outline: transparent;
-     &:focus {
-      border-color: var(--accent-color);
-      + .mob-input-icon {
-        fill: var(--accent-color);
-        color: var(--accent-color);
-      }
-     
-    }
-  }
+ 
 
-  .contract {
+
+
+.mob-menu-list {
+  margin: 48px auto auto 40px;
+}
+
+.mob-menu-item {
+  font-weight: 500;
+font-size: 34px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+margin-bottom: 32px;
+
+}
+.mobe-menu-link {
+  color: var(--title-text-color);
+  &:hover, &:focus {
     color: var(--accent-color);
   }
+}
+.mobe-cont-list {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+}
+.mobe-cont-item {
+  margin-bottom: 32px;
+}
 
-  .mob-field {
-    margin-bottom: 28px;
-  } 
-  .mob-fied-comment {
-    margin-bottom: 20px;
-  }
-  .mob-fied-text {
-    display: block;
-  
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--primary-text-color);
-    margin-bottom: 4px;
-  }
-  .mob-text {
-    width: 100%;
-    height: 50px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    resize: none;
-    padding: 12px 16px;
-    &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
+.mob-menu-tel {
+font-size: 34px;
+line-height: 1.18;
+color: var(--accent-color);
 }
-.mob-input-wrapper {
-  position: relative;
-  display: block;
+.mob-menu-email {
+font-size: 24px;
+line-height: 28px;
+color: #757575;
 }
-.mob-input-icon {
-  position: absolute;
-  left: 14px;
-  top: 13px;
-}
-.mob-check-text {
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--primary-text-color);
+
+.mob-social {
   display: flex;
-  align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
-.mob-check-item {
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  margin-right: 8px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid var(--title-text-color);
-  .mob-checkbox:checked + .mob-check-text & {
-  background-color: var(--accent-color);
-  border-color: transparent;
-}
-}
+.mob-social-link {
+  font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+margin-right: 10px;
 
-
-.mob-btn{
- display: block;
-background: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-margin: 0 auto;
-color: var(--title-white-color);
-margin-top: 31px;
-padding: 10px 25px;
+}
+.mob-contact-menu {
+  margin-left: 40px;
+}
+.mob-btn-close:focus {
+fill: var(--accent-color);
 }
